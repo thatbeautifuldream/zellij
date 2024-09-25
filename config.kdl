@@ -1,0 +1,30 @@
+mirror_session false
+styled_underlines true
+simplified_ui true
+pane_frames false
+auto_layout true
+session_serialization true
+serialize_pane_viewport true
+mouse_mode true
+scrollback_lines_to_serialize 10000
+default_layout "compact"
+scroll_buffer_size 10000
+scrollback_editor "nvim"
+theme "catppuccin-mocha"
+
+plugins {
+    tab-bar location="zellij:tab-bar"
+    status-bar location="zellij:status-bar"
+    strider location="zellij:strider"
+    compact-bar location="zellij:compact-bar"
+    session-manager location="zellij:session-manager"
+    welcome-screen location="zellij:session-manager" {
+        welcome_screen true
+    }
+    filepicker location="zellij:strider" {
+        cwd "/"
+    }
+    theme location="zellij:theme" {
+        name "catppuccin-mocha"
+    }
+}
